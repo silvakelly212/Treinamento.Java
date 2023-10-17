@@ -1,6 +1,5 @@
 package cap11.laboratorio;
 
-
 import javax.swing.*;
 
 public class ExercicioIdade {
