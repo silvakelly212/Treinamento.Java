@@ -1,4 +1,7 @@
-package cap09.laboratorio;
+package cap13;
+
+import cap09.laboratorio.Pessoa;
+import cap09.laboratorio.Rg;
 
 public class Aluno extends Pessoa {
 
@@ -6,7 +9,7 @@ public class Aluno extends Pessoa {
   private float mensalidade;
 
   public Aluno(String curso, float mensalidade,
-               String nome, int idade, char sexo, int numeroRg,String dataNasc) {
+               String nome, int idade, char sexo, int numeroRg, String dataNasc) {
     super(nome, idade, sexo, new Rg(numeroRg, dataNasc)); // contrutor da superClasse
     this.curso = curso;
     this.mensalidade = mensalidade;

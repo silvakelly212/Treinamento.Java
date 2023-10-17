@@ -1,27 +1,26 @@
 package cap11.laboratorio;
 
 import javax.swing.*;
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 public class ExercicioGravacao {
 
-     // Crie uma classe executavel chamada
-    public static void main(String[] args) {
-        String texto = JOptionPane.showInputDialog("Digite um texto qualquer");
-        PrintWriter writer = null;
+  public static void main(String[] args) {
 
-//        try {
-//            File fileName;
-//            writer = new PrintWriter(fileName: "doc.txt");
-//        }catch (IOException e){
-//            e.printStackTrace();
-//        }finally {
-//            if (writer!= null){
-//                writer.close();
-//            }
-        }
-
+    String texto = JOptionPane.showInputDialog("digite um texto qualquer");
+    PrintWriter writer = null;
+    try {
+      writer = new PrintWriter("doc.txt");
+//      writer.println(texto); // sobrescreve todo o texto do arquivo
+      writer.append(texto); // add o novo texto digitado
+      writer.close();
+    } catch (IOException e) {
+      e.printStackTrace();
+    } finally {
+      if (writer != null) {
+        writer.close();
+      }
+    }
+  }
 }
-
