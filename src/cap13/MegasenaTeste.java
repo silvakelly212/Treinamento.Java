@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
+import java.util.Set;
+
 // junit5
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) // regra de ordenação
 public class MegasenaTeste {
@@ -20,7 +22,7 @@ public class MegasenaTeste {
     // executar 1
     System.out.println("BeforeAll: Iniciando conexão com out banco");
     aluno = new Aluno("Programação", 300.99f,
-      "Maria", 20, 'f', 1456468, "10092001");
+            "Maria", 20, 'f', 1456468, "10092001");
   }
 
 //  @BeforeEach
@@ -88,5 +90,4 @@ public class MegasenaTeste {
       }
     }
   }
-
 }

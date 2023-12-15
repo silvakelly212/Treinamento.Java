@@ -22,7 +22,7 @@ public class TesteArrays {
 
         int[] array2 = {56, 30, 4, 10, 6}; // 4 index 0 a 3
 
-//    array2[4] = 50; não é possivel acessar/atribuir um valor fora do index
+        //array2[4] = 50; não é possivel acessar/atribuir um valor fora do index
 
         for (int i = 0; i < array2.length; i++) {
             System.out.print(array2[i]);
